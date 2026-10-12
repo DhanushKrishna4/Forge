@@ -1,0 +1,76 @@
+name: Deploy Forge to GitHub Pages (manual)
+
+# Merely pushing this workflow does not publish a site.
+'on':
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: forge-pages
+  cancel-in-progress: false
+
+env:
+  PYTHONPATH: src
+  FORGE_BASE: ${{ vars.FORGE_BASE || '/Forge/' }}
+
+jobs:
+  build:
+    name: Validate and build static Pages artifact
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13.12'
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '26.4.0'
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - name: Cache pinned browser runtime
+        uses: actions/cache@v6
+        with:
+          path: web/public/pyodide
+          key: pyodide-0.27.7-${{ hashFiles('scripts/prepare_assets.py', 'web/public/assets/runtime-manifest.json') }}
+      - name: Install locked development dependencies
+        run: python -m pip install -r requirements-dev.txt
+      - name: Verify native implementation and delivered model artifacts
+        run: python -m pytest --ignore=tests/test_reference.py -q
+      - name: Bundle current Forge source and pinned browser runtime
+        run: python scripts/prepare_assets.py --runtime
+      - name: Generate small deterministic backend fixtures
+        run: python scripts/generate_gpu_fixtures.py
+      - name: Install locked frontend dependencies
+        working-directory: web
+        run: npm ci
+      - name: Build static site
+        working-directory: web
+        run: npm run build
+      - name: Upload the built Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/dist
+
+  deploy:
+    name: Publish the reviewed static artifact
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

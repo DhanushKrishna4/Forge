@@ -1,0 +1,1996 @@
+{
+  "rows": [
+    {
+      "name": "elementwise chain",
+      "backend": "WebGPU",
+      "configuration": "unoptimized",
+      "medianMs": 0.900000000372529,
+      "minMs": 0.8999999985098839,
+      "maxMs": 1,
+      "stdMs": 0.04714045207910317,
+      "compilationMs": 12.499999998882503,
+      "uploadMs": 0.09999999962747097,
+      "executionMs": 0.40000000037252903,
+      "readbackMs": 0.5,
+      "kernels": 12,
+      "scratchBytes": 180224,
+      "repetitions": 15,
+      "samples": [
+        {
+          "uploadMs": 0,
+          "executeMs": 0.5,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.900000000372529
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.5,
+          "endToEndMs": 1
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.900000000372529
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.599999999627471,
+          "endToEndMs": 1
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.5,
+          "endToEndMs": 0.900000000372529
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.5,
+          "endToEndMs": 1
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.5,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.900000000372529
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.5,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.900000000372529
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.5,
+          "readbackMs": 0.5,
+          "endToEndMs": 1
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.5,
+          "endToEndMs": 0.900000000372529
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.5,
+          "endToEndMs": 0.900000000372529
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.5,
+          "readbackMs": 0.5,
+          "endToEndMs": 1
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.5,
+          "endToEndMs": 0.900000000372529
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.5,
+          "readbackMs": 0.3999999985098839,
+          "endToEndMs": 0.8999999985098839
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.5,
+          "readbackMs": 0.3999999985098839,
+          "endToEndMs": 0.8999999985098839
+        }
+      ],
+      "shapes": {
+        "x": [
+          64,
+          64
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": false,
+        "fold": false,
+        "cse": false,
+        "fusion": false,
+        "reuse": false,
+        "tiled": false,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "elementwise chain",
+      "backend": "WebGPU",
+      "configuration": "optimized",
+      "medianMs": 0.8000000007450581,
+      "minMs": 0.599999999627471,
+      "maxMs": 0.900000000372529,
+      "stdMs": 0.08055364008910802,
+      "compilationMs": 2.5000010007450086,
+      "uploadMs": 0.19999999925494194,
+      "executionMs": 0.40000000037252903,
+      "readbackMs": 0.40000000037252903,
+      "kernels": 2,
+      "scratchBytes": 16384,
+      "repetitions": 15,
+      "samples": [
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.5,
+          "endToEndMs": 0.8000000007450581
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.8000000007450581
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.5,
+          "endToEndMs": 0.900000000372529
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.6999999992549419
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.8000000007450581
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.5,
+          "endToEndMs": 0.900000000372529
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.8000000007450581
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.3999999985098839,
+          "endToEndMs": 0.7999999988824129
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.5,
+          "endToEndMs": 0.7999999988824129
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.8000000007450581
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.5,
+          "endToEndMs": 0.900000000372529
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.5,
+          "endToEndMs": 0.900000000372529
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.5,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.900000000372529
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 0.7999999988824129
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 0.599999999627471
+        }
+      ],
+      "shapes": {
+        "x": [
+          64,
+          64
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": true,
+        "fold": true,
+        "cse": true,
+        "fusion": true,
+        "reuse": true,
+        "tiled": true,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "common subexpressions",
+      "backend": "WebGPU",
+      "configuration": "unoptimized",
+      "medianMs": 0.6999999992549419,
+      "minMs": 0.40000000037252903,
+      "maxMs": 0.900000000372529,
+      "stdMs": 0.15860502999169848,
+      "compilationMs": 3.4000010000000387,
+      "uploadMs": 0,
+      "executionMs": 0.30000000074505806,
+      "readbackMs": 0.30000000074505806,
+      "kernels": 5,
+      "scratchBytes": 16384,
+      "repetitions": 15,
+      "samples": [
+        {
+          "uploadMs": 0,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.2000000011175871,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.6999999992549419
+        },
+        {
+          "uploadMs": 0.10000000149011612,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.7000000011175871
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2000000011175871,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.40000000037252903
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 0.6999999992549419
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.3999999985098839,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.7999999988824129
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.8000000007450581
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.5,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.900000000372529
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.3999999985098839,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.7999999988824129
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.5,
+          "endToEndMs": 0.900000000372529
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.09999999962747097,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.5
+        }
+      ],
+      "shapes": {
+        "x": [
+          32,
+          32
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": false,
+        "fold": false,
+        "cse": false,
+        "fusion": false,
+        "reuse": false,
+        "tiled": false,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "common subexpressions",
+      "backend": "WebGPU",
+      "configuration": "optimized",
+      "medianMs": 0.5,
+      "minMs": 0.40000000037252903,
+      "maxMs": 0.599999999627471,
+      "stdMs": 0.0699205896175356,
+      "compilationMs": 1.099999999627416,
+      "uploadMs": 0,
+      "executionMs": 0.19999999925494194,
+      "readbackMs": 0.2000000011175871,
+      "kernels": 1,
+      "scratchBytes": 0,
+      "repetitions": 15,
+      "samples": [
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 0.40000000037252903
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 0.40000000037252903
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.09999999962747097,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.40000000037252903
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 0.40000000037252903
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 0.40000000037252903
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.09999999962747097,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 0.40000000037252903
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.09999999962747097,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 0.40000000037252903
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 0.599999999627471
+        }
+      ],
+      "shapes": {
+        "x": [
+          32,
+          32
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": true,
+        "fold": true,
+        "cse": true,
+        "fusion": true,
+        "reuse": true,
+        "tiled": true,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "scratch reuse",
+      "backend": "WebGPU",
+      "configuration": "unoptimized",
+      "medianMs": 0.599999999627471,
+      "minMs": 0.5,
+      "maxMs": 0.900000000372529,
+      "stdMs": 0.10198039054947972,
+      "compilationMs": 22.500001000372492,
+      "uploadMs": 0.09999999962747097,
+      "executionMs": 0.30000000074505806,
+      "readbackMs": 0.2999999988824129,
+      "kernels": 12,
+      "scratchBytes": 45056,
+      "repetitions": 15,
+      "samples": [
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.5,
+          "endToEndMs": 0.900000000372529
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.3999999985098839,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.6999999992549419
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 0.7000000011175871
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.2000000011175871,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0.10000000149011612,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.8000000007450581
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.2000000011175871,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.7000000011175871
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 0.5
+        }
+      ],
+      "shapes": {
+        "x": [
+          32,
+          32
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": false,
+        "fold": false,
+        "cse": false,
+        "fusion": false,
+        "reuse": false,
+        "tiled": false,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "scratch reuse",
+      "backend": "WebGPU",
+      "configuration": "optimized",
+      "medianMs": 0.599999999627471,
+      "minMs": 0.5,
+      "maxMs": 1.6000000014901161,
+      "stdMs": 0.24997777714040967,
+      "compilationMs": 5.300000000744948,
+      "uploadMs": 0.09999999962747097,
+      "executionMs": 0.3999999985098839,
+      "readbackMs": 0.2000000011175871,
+      "kernels": 12,
+      "scratchBytes": 8192,
+      "repetitions": 15,
+      "samples": [
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 0.6000000014901161
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.3999999985098839,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 0.6999999992549419
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0.10000000149011612,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 0.6000000014901161
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.3999999985098839,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.6999999992549419
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0.10000000149011612,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.7000000011175871
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 1.300000000745058,
+          "endToEndMs": 1.6000000014901161
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.6999999992549419
+        }
+      ],
+      "shapes": {
+        "x": [
+          32,
+          32
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": true,
+        "fold": true,
+        "cse": true,
+        "fusion": true,
+        "reuse": true,
+        "tiled": true,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "matmul 15×18×13",
+      "backend": "WebGPU",
+      "configuration": "unoptimized",
+      "medianMs": 0.599999999627471,
+      "minMs": 0.5,
+      "maxMs": 1.5,
+      "stdMs": 0.2407396011272753,
+      "compilationMs": 0.8000000011177981,
+      "uploadMs": 0.09999999962747097,
+      "executionMs": 0.2999999988824129,
+      "readbackMs": 0.2999999988824129,
+      "kernels": 1,
+      "scratchBytes": 0,
+      "repetitions": 15,
+      "samples": [
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 1.300000000745058,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 1.5
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 0.6999999992549419
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.6000000014901161
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2000000011175871,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.5
+        }
+      ],
+      "shapes": {
+        "a": [
+          15,
+          18
+        ],
+        "b": [
+          18,
+          13
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": false,
+        "fold": false,
+        "cse": false,
+        "fusion": false,
+        "reuse": false,
+        "tiled": false,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "matmul 15×18×13",
+      "backend": "WebGPU",
+      "configuration": "optimized",
+      "medianMs": 0.5,
+      "minMs": 0.5,
+      "maxMs": 0.6999999992549419,
+      "stdMs": 0.06182412307299188,
+      "compilationMs": 1.0999999988823799,
+      "uploadMs": 0.09999999962747097,
+      "executionMs": 0.2000000011175871,
+      "readbackMs": 0.2999999988824129,
+      "kernels": 1,
+      "scratchBytes": 0,
+      "repetitions": 15,
+      "samples": [
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2000000011175871,
+          "readbackMs": 0.3999999985098839,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2000000011175871,
+          "readbackMs": 0.3999999985098839,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0.10000000149011612,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.09999999962747097,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0.19999999925494194,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.6999999992549419
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.2000000011175871,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2000000011175871,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.5
+        }
+      ],
+      "shapes": {
+        "a": [
+          15,
+          18
+        ],
+        "b": [
+          18,
+          13
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": true,
+        "fold": true,
+        "cse": true,
+        "fusion": true,
+        "reuse": true,
+        "tiled": true,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "matmul 32×35×30",
+      "backend": "WebGPU",
+      "configuration": "unoptimized",
+      "medianMs": 0.5,
+      "minMs": 0.3999999985098839,
+      "maxMs": 1.099999999627471,
+      "stdMs": 0.15577761928353795,
+      "compilationMs": 0.7999989999998842,
+      "uploadMs": 0.09999999962747097,
+      "executionMs": 0.2000000011175871,
+      "readbackMs": 0.2999999988824129,
+      "kernels": 1,
+      "scratchBytes": 0,
+      "repetitions": 15,
+      "samples": [
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2000000011175871,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0.10000000149011612,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.6000000014901161
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.7999999988824129,
+          "endToEndMs": 1.099999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2000000011175871,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0.10000000149011612,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.6000000014901161
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.2000000011175871,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.3999999985098839
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.6999999992549419
+        }
+      ],
+      "shapes": {
+        "a": [
+          32,
+          35
+        ],
+        "b": [
+          35,
+          30
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": false,
+        "fold": false,
+        "cse": false,
+        "fusion": false,
+        "reuse": false,
+        "tiled": false,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "matmul 32×35×30",
+      "backend": "WebGPU",
+      "configuration": "optimized",
+      "medianMs": 0.599999999627471,
+      "minMs": 0.5,
+      "maxMs": 0.6000000014901161,
+      "stdMs": 0.0489897950787206,
+      "compilationMs": 1.1000010003725897,
+      "uploadMs": 0,
+      "executionMs": 0.30000000074505806,
+      "readbackMs": 0.2000000011175871,
+      "kernels": 1,
+      "scratchBytes": 0,
+      "repetitions": 15,
+      "samples": [
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 0.6000000014901161
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.6000000014901161
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.2000000011175871,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0.10000000149011612,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.6000000014901161
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 0.5
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.6000000014901161
+        }
+      ],
+      "shapes": {
+        "a": [
+          32,
+          35
+        ],
+        "b": [
+          35,
+          30
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": true,
+        "fold": true,
+        "cse": true,
+        "fusion": true,
+        "reuse": true,
+        "tiled": true,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "matmul 65×68×63",
+      "backend": "WebGPU",
+      "configuration": "unoptimized",
+      "medianMs": 0.6999999992549419,
+      "minMs": 0.599999999627471,
+      "maxMs": 0.7000000011175871,
+      "stdMs": 0.04988876505410457,
+      "compilationMs": 1.1000009985099446,
+      "uploadMs": 0.30000000074505806,
+      "executionMs": 0.30000000074505806,
+      "readbackMs": 0.30000000074505806,
+      "kernels": 1,
+      "scratchBytes": 0,
+      "repetitions": 15,
+      "samples": [
+        {
+          "uploadMs": 0,
+          "executeMs": 0.3999999985098839,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.6999999992549419
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.6000000014901161
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.6999999992549419
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.2000000011175871,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.7000000011175871
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2000000011175871,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.6000000014901161
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.6999999992549419
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.6999999992549419
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.3999999985098839,
+          "endToEndMs": 0.6999999992549419
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.7000000011175871
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.7000000011175871
+        }
+      ],
+      "shapes": {
+        "a": [
+          65,
+          68
+        ],
+        "b": [
+          68,
+          63
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": false,
+        "fold": false,
+        "cse": false,
+        "fusion": false,
+        "reuse": false,
+        "tiled": false,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "matmul 65×68×63",
+      "backend": "WebGPU",
+      "configuration": "optimized",
+      "medianMs": 0.6999999992549419,
+      "minMs": 0.599999999627471,
+      "maxMs": 0.900000000372529,
+      "stdMs": 0.061824123488090556,
+      "compilationMs": 1.600000000372507,
+      "uploadMs": 0.2999999988824129,
+      "executionMs": 0.30000000074505806,
+      "readbackMs": 0.40000000037252903,
+      "kernels": 1,
+      "scratchBytes": 0,
+      "repetitions": 15,
+      "samples": [
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.6999999992549419
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.8000000007450581
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.6999999992549419
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.3999999985098839,
+          "endToEndMs": 0.6999999992549419
+        },
+        {
+          "uploadMs": 0.10000000149011612,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.7000000011175871
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.19999999925494194,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.599999999627471
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.2000000011175871,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.7000000011175871
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.599999999627471,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.900000000372529
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.40000000037252903,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 0.6999999992549419
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.7000000011175871
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.3999999985098839,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 0.6999999992549419
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.2000000011175871,
+          "readbackMs": 0.3999999985098839,
+          "endToEndMs": 0.6999999992549419
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.7000000011175871
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.2999999988824129,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.6999999992549419
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.30000000074505806,
+          "readbackMs": 0.40000000037252903,
+          "endToEndMs": 0.7000000011175871
+        }
+      ],
+      "shapes": {
+        "a": [
+          65,
+          68
+        ],
+        "b": [
+          68,
+          63
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": true,
+        "fold": true,
+        "cse": true,
+        "fusion": true,
+        "reuse": true,
+        "tiled": true,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "MLP complete Adam step",
+      "backend": "WebGPU",
+      "configuration": "unoptimized",
+      "medianMs": 1.800000000745058,
+      "minMs": 1.699999999254942,
+      "maxMs": 1.900000000372529,
+      "stdMs": 0.07180219751839004,
+      "compilationMs": 46.60000000111756,
+      "uploadMs": 0.19999999925494194,
+      "executionMs": 1.5,
+      "readbackMs": 0.2000000011175871,
+      "kernels": 189,
+      "scratchBytes": 60536,
+      "repetitions": 15,
+      "samples": [
+        {
+          "uploadMs": 0,
+          "executeMs": 1.6000000014901161,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 1.800000000745058
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 1.5999999977648258,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 1.8999999985098839
+        },
+        {
+          "uploadMs": 0.10000000149011612,
+          "executeMs": 1.5999999977648258,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 1.900000000372529
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 1.5000000018626451,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 1.800000000745058
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 1.5000000018626451,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 1.800000000745058
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 1.4999999981373549,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 1.699999999254942
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 1.4000000022351742,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 1.700000001117587
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 1.5,
+          "readbackMs": 0.09999999962747097,
+          "endToEndMs": 1.699999999254942
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 1.5999999977648258,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 1.799999998882413
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 1.5,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 1.699999999254942
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 1.5,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 1.800000000745058
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 1.3999999985098839,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 1.699999999254942
+        },
+        {
+          "uploadMs": 0.2000000011175871,
+          "executeMs": 1.5,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 1.900000000372529
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 1.5000000018626451,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 1.800000000745058
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 1.3999999985098839,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 1.799999998882413
+        }
+      ],
+      "shapes": {
+        "layer0.weight": [
+          2,
+          16
+        ],
+        "layer0.bias": [
+          16
+        ],
+        "layer1.weight": [
+          16,
+          16
+        ],
+        "layer1.bias": [
+          16
+        ],
+        "layer2.weight": [
+          16,
+          2
+        ],
+        "layer2.bias": [
+          2
+        ],
+        "state/step": [],
+        "state/m/layer0.weight": [
+          2,
+          16
+        ],
+        "state/v/layer0.weight": [
+          2,
+          16
+        ],
+        "state/m/layer0.bias": [
+          16
+        ],
+        "state/v/layer0.bias": [
+          16
+        ],
+        "state/m/layer1.weight": [
+          16,
+          16
+        ],
+        "state/v/layer1.weight": [
+          16,
+          16
+        ],
+        "state/m/layer1.bias": [
+          16
+        ],
+        "state/v/layer1.bias": [
+          16
+        ],
+        "state/m/layer2.weight": [
+          16,
+          2
+        ],
+        "state/v/layer2.weight": [
+          16,
+          2
+        ],
+        "state/m/layer2.bias": [
+          2
+        ],
+        "state/v/layer2.bias": [
+          2
+        ],
+        "x": [
+          32,
+          2
+        ],
+        "labels": [
+          32
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": false,
+        "fold": false,
+        "cse": false,
+        "fusion": false,
+        "reuse": false,
+        "tiled": false,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "MLP complete Adam step",
+      "backend": "WebGPU",
+      "configuration": "optimized",
+      "medianMs": 1.300000000745058,
+      "minMs": 1.199999999254942,
+      "maxMs": 1.800000000745058,
+      "stdMs": 0.16193277067121148,
+      "compilationMs": 27.299999999255053,
+      "uploadMs": 0.2000000011175871,
+      "executionMs": 1,
+      "readbackMs": 0.2999999988824129,
+      "kernels": 86,
+      "scratchBytes": 10504,
+      "repetitions": 15,
+      "samples": [
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 1.099999999627471,
+          "readbackMs": 0.5,
+          "endToEndMs": 1.699999999254942
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.9999999981373549,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 1.299999998882413
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.9000000022351742,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 1.300000000745058
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 1,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 1.300000000745058
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.9999999981373549,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 1.3999999985098839
+        },
+        {
+          "uploadMs": 0.10000000149011612,
+          "executeMs": 0.8999999985098839,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 1.300000000745058
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 1.6000000014901161,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 1.800000000745058
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 1.099999999627471,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 1.400000000372529
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 1.0999999977648258,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 1.299999998882413
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 1.0000000018626451,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 1.200000001117587
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 1.0000000018626451,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 1.400000000372529
+        },
+        {
+          "uploadMs": 0,
+          "executeMs": 0.9999999981373549,
+          "readbackMs": 0.30000000074505806,
+          "endToEndMs": 1.299999998882413
+        },
+        {
+          "uploadMs": 0.10000000149011612,
+          "executeMs": 1,
+          "readbackMs": 0.19999999925494194,
+          "endToEndMs": 1.300000000745058
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.9000000022351742,
+          "readbackMs": 0.2999999988824129,
+          "endToEndMs": 1.300000000745058
+        },
+        {
+          "uploadMs": 0.09999999962747097,
+          "executeMs": 0.8999999985098839,
+          "readbackMs": 0.2000000011175871,
+          "endToEndMs": 1.199999999254942
+        }
+      ],
+      "shapes": {
+        "layer0.weight": [
+          2,
+          16
+        ],
+        "layer0.bias": [
+          16
+        ],
+        "layer1.weight": [
+          16,
+          16
+        ],
+        "layer1.bias": [
+          16
+        ],
+        "layer2.weight": [
+          16,
+          2
+        ],
+        "layer2.bias": [
+          2
+        ],
+        "state/step": [],
+        "state/m/layer0.weight": [
+          2,
+          16
+        ],
+        "state/v/layer0.weight": [
+          2,
+          16
+        ],
+        "state/m/layer0.bias": [
+          16
+        ],
+        "state/v/layer0.bias": [
+          16
+        ],
+        "state/m/layer1.weight": [
+          16,
+          16
+        ],
+        "state/v/layer1.weight": [
+          16,
+          16
+        ],
+        "state/m/layer1.bias": [
+          16
+        ],
+        "state/v/layer1.bias": [
+          16
+        ],
+        "state/m/layer2.weight": [
+          16,
+          2
+        ],
+        "state/v/layer2.weight": [
+          16,
+          2
+        ],
+        "state/m/layer2.bias": [
+          2
+        ],
+        "state/v/layer2.bias": [
+          2
+        ],
+        "x": [
+          32,
+          2
+        ],
+        "labels": [
+          32
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": true,
+        "fold": true,
+        "cse": true,
+        "fusion": true,
+        "reuse": true,
+        "tiled": true,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    }
+  ],
+  "timingMethod": "Synchronized performance.now wall clock; queue.onSubmittedWorkDone plus mapped readback. 3 warmups. Resident data; initial upload reported separately.",
+  "environment": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "limits": {
+      "maxBufferSize": 268435456,
+      "maxStorageBufferBindingSize": 134217728,
+      "maxStorageBuffersPerShaderStage": 8,
+      "maxComputeWorkgroupsPerDimension": 65535,
+      "maxComputeInvocationsPerWorkgroup": 256,
+      "maxComputeWorkgroupSizeX": 256,
+      "maxComputeWorkgroupSizeY": 256,
+      "maxComputeWorkgroupStorageSize": 16384
+    },
+    "features": [
+      "core-features-and-limits"
+    ],
+    "adapter": {
+      "vendor": "apple",
+      "architecture": "metal-3",
+      "device": "",
+      "description": "",
+      "isFallbackAdapter": false
+    },
+    "timingMethod": "synchronized wall clock",
+    "timestampQueriesUsed": false,
+    "backend": "WebGPU",
+    "resourceStats": {
+      "ownedBytes": 21164,
+      "bufferCount": 80,
+      "pipelineCount": 86,
+      "stagingBytes": 0,
+      "deviceOwnedBytes": 318940,
+      "deviceStagingBytes": 0
+    }
+  },
+  "timestamp": "2026-10-08T16:25:15.731Z",
+  "notes": [
+    "Compilation includes Python plan generation and GPU pipeline creation.",
+    "End-to-end samples include queue completion, update commit and one output readback. Initial model upload is reported separately.",
+    "Inspections are excluded. A lower dispatch or allocation count does not promise lower latency."
+  ],
+  "url": "http://127.0.0.1:4173/Forge/validation.html"
+}

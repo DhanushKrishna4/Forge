@@ -1,0 +1,122 @@
+{
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "python": "3.13.12",
+  "numpy": "2.2.6",
+  "seed": 42,
+  "pilot": {
+    "steps": 10,
+    "ms_per_step": 2.2295375005342066,
+    "peakProcessRSSBytes": 37666816,
+    "estimatedRemainingSeconds": 1.315427125315182
+  },
+  "model": {
+    "dataset": "moons",
+    "seed": 42,
+    "samples": 240,
+    "noise": 0.12,
+    "hidden": [
+      32,
+      32
+    ],
+    "activation": "tanh",
+    "optimizer": "adam",
+    "learningRate": 0.01,
+    "batchSize": 64,
+    "backend": "cpu",
+    "compiler": {
+      "dce": true,
+      "fold": true,
+      "cse": true,
+      "fusion": true,
+      "reuse": true,
+      "tiled": true
+    }
+  },
+  "split": {
+    "train": 168,
+    "validation": 36,
+    "test": 36
+  },
+  "datasetChecksum": "eb2badc1464aa0d83376e99cc525f9104b1af2a5a80b0f95e813dbc7d3b7a88a",
+  "validation": [
+    {
+      "step": 60,
+      "loss": 0.0787678137421608,
+      "accuracy": 0.9722222222222222
+    },
+    {
+      "step": 110,
+      "loss": 0.02029508352279663,
+      "accuracy": 1.0
+    },
+    {
+      "step": 160,
+      "loss": 0.006017656996846199,
+      "accuracy": 1.0
+    },
+    {
+      "step": 210,
+      "loss": 0.0036968188360333443,
+      "accuracy": 1.0
+    },
+    {
+      "step": 260,
+      "loss": 0.0037725854199379683,
+      "accuracy": 1.0
+    },
+    {
+      "step": 310,
+      "loss": 0.0019413474947214127,
+      "accuracy": 1.0
+    },
+    {
+      "step": 360,
+      "loss": 0.0018876756075769663,
+      "accuracy": 1.0
+    },
+    {
+      "step": 410,
+      "loss": 0.0011485437862575054,
+      "accuracy": 1.0
+    },
+    {
+      "step": 460,
+      "loss": 0.0009574788855388761,
+      "accuracy": 1.0
+    },
+    {
+      "step": 510,
+      "loss": 0.0010123982792720199,
+      "accuracy": 1.0
+    },
+    {
+      "step": 560,
+      "loss": 0.0007798827718943357,
+      "accuracy": 1.0
+    },
+    {
+      "step": 600,
+      "loss": 0.0006548109231516719,
+      "accuracy": 1.0
+    }
+  ],
+  "selectedStep": 600,
+  "trainingSeconds": 1.3405343330014148,
+  "test": {
+    "loss": 0.00026832229923456907,
+    "accuracy": 1.0,
+    "rows": 36,
+    "confusion": [
+      [
+        18,
+        0
+      ],
+      [
+        0,
+        18
+      ]
+    ]
+  },
+  "peakProcessRSSBytes": 38748160,
+  "forgePersistentTensorBytes": 14620
+}

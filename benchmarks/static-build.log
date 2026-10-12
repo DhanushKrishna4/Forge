@@ -1,0 +1,17 @@
+
+> forge-playground@0.1.0 build
+> tsc -b && vite build
+
+vite v6.3.5 building for production...
+transforming...
+✓ 36 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                       0.84 kB │ gzip:  0.48 kB
+dist/validation.html                  1.60 kB │ gzip:  0.90 kB
+dist/assets/worker-Cfdc73cM.js       19.94 kB
+dist/assets/main-DwsOJwgs.css        51.16 kB │ gzip: 11.51 kB
+dist/assets/types-JjVh62TI.js         2.59 kB │ gzip:  1.30 kB
+dist/assets/validation-ByrqHUQi.js    8.21 kB │ gzip:  3.17 kB
+dist/assets/main-BstLtZ9z.js        251.65 kB │ gzip: 77.21 kB
+✓ built in 3m 21s

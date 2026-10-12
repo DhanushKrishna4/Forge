@@ -1,0 +1,917 @@
+{
+  "rows": [
+    {
+      "name": "elementwise chain",
+      "backend": "native NumPy",
+      "configuration": "unoptimized",
+      "medianMs": 0.07554199692094699,
+      "minMs": 0.07462499343091622,
+      "maxMs": 0.08416699711233377,
+      "stdMs": 0.003044808925463565,
+      "compilationMs": 0.9172499994747341,
+      "executionMs": 0.07554199692094699,
+      "uploadMs": 0,
+      "readbackMs": 0,
+      "kernels": 12,
+      "scratchBytes": 180224,
+      "repetitions": 15,
+      "samplesMs": [
+        0.07729099888820201,
+        0.07904199446784332,
+        0.08412500028498471,
+        0.07579200610052794,
+        0.08416699711233377,
+        0.07583299884572625,
+        0.07550000009359792,
+        0.07533399912063032,
+        0.07554199692094699,
+        0.07508300041081384,
+        0.07566600106656551,
+        0.07487499533453956,
+        0.0751249972381629,
+        0.07462499343091622,
+        0.07504200038965791
+      ],
+      "shapes": {
+        "x": [
+          64,
+          64
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": false,
+        "fold": false,
+        "cse": false,
+        "fusion": false,
+        "reuse": false,
+        "tiled": false,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "elementwise chain",
+      "backend": "native NumPy",
+      "configuration": "optimized",
+      "medianMs": 0.07291699876077473,
+      "minMs": 0.07179200474638492,
+      "maxMs": 0.07820899918442592,
+      "stdMs": 0.0019454024834879079,
+      "compilationMs": 0.5185830013942905,
+      "executionMs": 0.07291699876077473,
+      "uploadMs": 0,
+      "readbackMs": 0,
+      "kernels": 2,
+      "scratchBytes": 16384,
+      "repetitions": 15,
+      "samplesMs": [
+        0.07820899918442592,
+        0.07274999370565638,
+        0.07258300320245326,
+        0.07179200474638492,
+        0.0719579984433949,
+        0.07391699909931049,
+        0.07604200072819367,
+        0.07183299749158323,
+        0.07745799666736275,
+        0.072667004133109,
+        0.07312500383704901,
+        0.07291699876077473,
+        0.07291699876077473,
+        0.07295799878193066,
+        0.07245799497468397
+      ],
+      "shapes": {
+        "x": [
+          64,
+          64
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": true,
+        "fold": true,
+        "cse": true,
+        "fusion": true,
+        "reuse": true,
+        "tiled": true,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "common subexpressions",
+      "backend": "native NumPy",
+      "configuration": "unoptimized",
+      "medianMs": 0.025041001208592206,
+      "minMs": 0.02462499833200127,
+      "maxMs": 0.027958994905930012,
+      "stdMs": 0.0007739515808723146,
+      "compilationMs": 0.24683399533387274,
+      "executionMs": 0.025041001208592206,
+      "uploadMs": 0,
+      "readbackMs": 0,
+      "kernels": 5,
+      "scratchBytes": 16384,
+      "repetitions": 15,
+      "samplesMs": [
+        0.02524999581510201,
+        0.025375004042871296,
+        0.027958994905930012,
+        0.025125002139247954,
+        0.025082998035941273,
+        0.025083994842134416,
+        0.0249579970841296,
+        0.02483299613231793,
+        0.024666995159350336,
+        0.025041001208592206,
+        0.024833003408275545,
+        0.025042005290742964,
+        0.02462499833200127,
+        0.024790999304968864,
+        0.02479200338711962
+      ],
+      "shapes": {
+        "x": [
+          32,
+          32
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": false,
+        "fold": false,
+        "cse": false,
+        "fusion": false,
+        "reuse": false,
+        "tiled": false,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "common subexpressions",
+      "backend": "native NumPy",
+      "configuration": "optimized",
+      "medianMs": 0.015541998436674476,
+      "minMs": 0.015334000636357814,
+      "maxMs": 0.018207996618002653,
+      "stdMs": 0.0007869130326897234,
+      "compilationMs": 0.21370899776229635,
+      "executionMs": 0.015541998436674476,
+      "uploadMs": 0,
+      "readbackMs": 0,
+      "kernels": 1,
+      "scratchBytes": 0,
+      "repetitions": 15,
+      "samplesMs": [
+        0.016291000065393746,
+        0.015666002582293004,
+        0.015541998436674476,
+        0.017166996258310974,
+        0.018207996618002653,
+        0.01654199877521023,
+        0.015500001609325409,
+        0.015541998436674476,
+        0.015541998436674476,
+        0.015334000636357814,
+        0.015541998436674476,
+        0.015416997484862804,
+        0.015500001609325409,
+        0.015459001588169485,
+        0.015499994333367795
+      ],
+      "shapes": {
+        "x": [
+          32,
+          32
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": true,
+        "fold": true,
+        "cse": true,
+        "fusion": true,
+        "reuse": true,
+        "tiled": true,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "scratch reuse",
+      "backend": "native NumPy",
+      "configuration": "unoptimized",
+      "medianMs": 0.06762499833712354,
+      "minMs": 0.06595800368813798,
+      "maxMs": 0.07662500138394535,
+      "stdMs": 0.002448016528232097,
+      "compilationMs": 0.545292001334019,
+      "executionMs": 0.06762499833712354,
+      "uploadMs": 0,
+      "readbackMs": 0,
+      "kernels": 12,
+      "scratchBytes": 45056,
+      "repetitions": 15,
+      "samplesMs": [
+        0.0670000008540228,
+        0.06808299804106355,
+        0.06833299994468689,
+        0.06658300117123872,
+        0.0670000008540228,
+        0.07662500138394535,
+        0.06595800368813798,
+        0.0670000008540228,
+        0.06779199611628428,
+        0.06604100053664297,
+        0.06795799708925188,
+        0.06774999928893521,
+        0.06658300117123872,
+        0.06762499833712354,
+        0.06845800089649856
+      ],
+      "shapes": {
+        "x": [
+          32,
+          32
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": false,
+        "fold": false,
+        "cse": false,
+        "fusion": false,
+        "reuse": false,
+        "tiled": false,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "scratch reuse",
+      "backend": "native NumPy",
+      "configuration": "optimized",
+      "medianMs": 0.06383400614140555,
+      "minMs": 0.06275000487221405,
+      "maxMs": 0.06516699795611203,
+      "stdMs": 0.0006855622797438604,
+      "compilationMs": 0.5261250043986365,
+      "executionMs": 0.06383400614140555,
+      "uploadMs": 0,
+      "readbackMs": 0,
+      "kernels": 12,
+      "scratchBytes": 8192,
+      "repetitions": 15,
+      "samplesMs": [
+        0.06354100332828239,
+        0.06354200013447553,
+        0.06495799607364461,
+        0.06279099761741236,
+        0.06350000330712646,
+        0.06362500425893813,
+        0.06275000487221405,
+        0.06333400233415887,
+        0.06454200047301129,
+        0.06399999983841553,
+        0.06450000364566222,
+        0.06383400614140555,
+        0.06429199856938794,
+        0.06404200394172221,
+        0.06516699795611203
+      ],
+      "shapes": {
+        "x": [
+          32,
+          32
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": true,
+        "fold": true,
+        "cse": true,
+        "fusion": true,
+        "reuse": true,
+        "tiled": true,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "matmul 15\u00d718\u00d713",
+      "backend": "native NumPy",
+      "configuration": "unoptimized",
+      "medianMs": 0.008167000487446785,
+      "minMs": 0.008082999556791037,
+      "maxMs": 0.009999996109399945,
+      "stdMs": 0.0004621129819370139,
+      "compilationMs": 0.11125000310130417,
+      "executionMs": 0.008167000487446785,
+      "uploadMs": 0,
+      "readbackMs": 0,
+      "kernels": 1,
+      "scratchBytes": 0,
+      "repetitions": 15,
+      "samplesMs": [
+        0.008541996066924185,
+        0.008374998287763447,
+        0.008458999218419194,
+        0.008458002412226051,
+        0.008167000487446785,
+        0.008167000487446785,
+        0.008082999556791037,
+        0.008082999556791037,
+        0.009999996109399945,
+        0.008416995115112513,
+        0.008165996405296028,
+        0.008082999556791037,
+        0.008208000508602709,
+        0.008124996384140104,
+        0.008165996405296028
+      ],
+      "shapes": {
+        "a": [
+          15,
+          18
+        ],
+        "b": [
+          18,
+          13
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": false,
+        "fold": false,
+        "cse": false,
+        "fusion": false,
+        "reuse": false,
+        "tiled": false,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "matmul 15\u00d718\u00d713",
+      "backend": "native NumPy",
+      "configuration": "optimized",
+      "medianMs": 0.008125003660097718,
+      "minMs": 0.00804100272944197,
+      "maxMs": 0.00825000461190939,
+      "stdMs": 4.945111272139424e-05,
+      "compilationMs": 0.19137500203214586,
+      "executionMs": 0.008125003660097718,
+      "uploadMs": 0,
+      "readbackMs": 0,
+      "kernels": 1,
+      "scratchBytes": 0,
+      "repetitions": 15,
+      "samplesMs": [
+        0.00825000461190939,
+        0.008082999556791037,
+        0.008167000487446785,
+        0.008082999556791037,
+        0.00804100272944197,
+        0.008125003660097718,
+        0.008167000487446785,
+        0.008125003660097718,
+        0.008167000487446785,
+        0.008125003660097718,
+        0.008125003660097718,
+        0.008082999556791037,
+        0.008124996384140104,
+        0.008167000487446785,
+        0.008083006832748652
+      ],
+      "shapes": {
+        "a": [
+          15,
+          18
+        ],
+        "b": [
+          18,
+          13
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": true,
+        "fold": true,
+        "cse": true,
+        "fusion": true,
+        "reuse": true,
+        "tiled": true,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "matmul 32\u00d735\u00d730",
+      "backend": "native NumPy",
+      "configuration": "unoptimized",
+      "medianMs": 0.010207993909716606,
+      "minMs": 0.009499999578110874,
+      "maxMs": 0.012208001862745732,
+      "stdMs": 0.0006904804328103292,
+      "compilationMs": 0.1071660008165054,
+      "executionMs": 0.010207993909716606,
+      "uploadMs": 0,
+      "readbackMs": 0,
+      "kernels": 1,
+      "scratchBytes": 0,
+      "repetitions": 15,
+      "samplesMs": [
+        0.012208001862745732,
+        0.0109999964479357,
+        0.010833005944732577,
+        0.01120899833040312,
+        0.01029099803417921,
+        0.009499999578110874,
+        0.010042000212706625,
+        0.0109999964479357,
+        0.010207993909716606,
+        0.009750001481734216,
+        0.010166993888560683,
+        0.010750001820269972,
+        0.010041003406513482,
+        0.00970800465438515,
+        0.010000003385357559
+      ],
+      "shapes": {
+        "a": [
+          32,
+          35
+        ],
+        "b": [
+          35,
+          30
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": false,
+        "fold": false,
+        "cse": false,
+        "fusion": false,
+        "reuse": false,
+        "tiled": false,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "matmul 32\u00d735\u00d730",
+      "backend": "native NumPy",
+      "configuration": "optimized",
+      "medianMs": 0.010084004316013306,
+      "minMs": 0.009499999578110874,
+      "maxMs": 0.011667005310300738,
+      "stdMs": 0.0005815731278085358,
+      "compilationMs": 0.10099999781232327,
+      "executionMs": 0.010084004316013306,
+      "uploadMs": 0,
+      "readbackMs": 0,
+      "kernels": 1,
+      "scratchBytes": 0,
+      "repetitions": 15,
+      "samplesMs": [
+        0.010708994523156434,
+        0.009499999578110874,
+        0.010084004316013306,
+        0.01087499549612403,
+        0.010416995792184025,
+        0.010457995813339949,
+        0.010124997061211616,
+        0.009917006536852568,
+        0.010916002793237567,
+        0.010000003385357559,
+        0.009542003681417555,
+        0.009875002433545887,
+        0.011667005310300738,
+        0.009959003364201635,
+        0.009583003702573478
+      ],
+      "shapes": {
+        "a": [
+          32,
+          35
+        ],
+        "b": [
+          35,
+          30
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": true,
+        "fold": true,
+        "cse": true,
+        "fusion": true,
+        "reuse": true,
+        "tiled": true,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "matmul 65\u00d768\u00d763",
+      "backend": "native NumPy",
+      "configuration": "unoptimized",
+      "medianMs": 0.013500000932253897,
+      "minMs": 0.011292002454865724,
+      "maxMs": 0.016666999727021903,
+      "stdMs": 0.001038532167578894,
+      "compilationMs": 0.10291699436493218,
+      "executionMs": 0.013500000932253897,
+      "uploadMs": 0,
+      "readbackMs": 0,
+      "kernels": 1,
+      "scratchBytes": 0,
+      "repetitions": 15,
+      "samplesMs": [
+        0.013834003766532987,
+        0.014083001588005573,
+        0.013917000615037978,
+        0.013374999980442226,
+        0.013500000932253897,
+        0.013582997780758888,
+        0.013374999980442226,
+        0.013125005352776498,
+        0.013583005056716502,
+        0.013834003766532987,
+        0.013457996828947216,
+        0.013249999028630555,
+        0.012875003449153155,
+        0.011292002454865724,
+        0.016666999727021903
+      ],
+      "shapes": {
+        "a": [
+          65,
+          68
+        ],
+        "b": [
+          68,
+          63
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": false,
+        "fold": false,
+        "cse": false,
+        "fusion": false,
+        "reuse": false,
+        "tiled": false,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "matmul 65\u00d768\u00d763",
+      "backend": "native NumPy",
+      "configuration": "optimized",
+      "medianMs": 0.013624994608107954,
+      "minMs": 0.011292002454865724,
+      "maxMs": 0.016666999727021903,
+      "stdMs": 0.0015966828595840408,
+      "compilationMs": 0.10187499719904736,
+      "executionMs": 0.013624994608107954,
+      "uploadMs": 0,
+      "readbackMs": 0,
+      "kernels": 1,
+      "scratchBytes": 0,
+      "repetitions": 15,
+      "samplesMs": [
+        0.016666999727021903,
+        0.012499993317760527,
+        0.011292002454865724,
+        0.013624994608107954,
+        0.013541997759602964,
+        0.016458005120512098,
+        0.012417003745213151,
+        0.014334000297822058,
+        0.013457996828947216,
+        0.013584001862909645,
+        0.0159579940373078,
+        0.012249998690094799,
+        0.014166995242703706,
+        0.013709002814721316,
+        0.016250000044237822
+      ],
+      "shapes": {
+        "a": [
+          65,
+          68
+        ],
+        "b": [
+          68,
+          63
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": true,
+        "fold": true,
+        "cse": true,
+        "fusion": true,
+        "reuse": true,
+        "tiled": true,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "MLP complete Adam step",
+      "backend": "native NumPy",
+      "configuration": "unoptimized",
+      "medianMs": 1.1133340012747794,
+      "minMs": 0.9201249995385297,
+      "maxMs": 1.2489580039982684,
+      "stdMs": 0.07615454363471087,
+      "compilationMs": 10.839583002962172,
+      "executionMs": 1.1133340012747794,
+      "uploadMs": 0,
+      "readbackMs": 0,
+      "kernels": 189,
+      "scratchBytes": 60536,
+      "repetitions": 15,
+      "samplesMs": [
+        1.0853749990928918,
+        1.075541993486695,
+        1.0890420016949065,
+        1.1240000021643937,
+        1.1585419997572899,
+        1.1595830001169816,
+        1.102457994420547,
+        1.1380420037312433,
+        1.2489580039982684,
+        1.148291994468309,
+        1.1133340012747794,
+        1.1205419941688888,
+        1.065083000867162,
+        0.9644589954405092,
+        0.9201249995385297
+      ],
+      "shapes": {
+        "layer0.weight": [
+          2,
+          16
+        ],
+        "layer0.bias": [
+          16
+        ],
+        "layer1.weight": [
+          16,
+          16
+        ],
+        "layer1.bias": [
+          16
+        ],
+        "layer2.weight": [
+          16,
+          2
+        ],
+        "layer2.bias": [
+          2
+        ],
+        "state/step": [],
+        "state/m/layer0.weight": [
+          2,
+          16
+        ],
+        "state/v/layer0.weight": [
+          2,
+          16
+        ],
+        "state/m/layer0.bias": [
+          16
+        ],
+        "state/v/layer0.bias": [
+          16
+        ],
+        "state/m/layer1.weight": [
+          16,
+          16
+        ],
+        "state/v/layer1.weight": [
+          16,
+          16
+        ],
+        "state/m/layer1.bias": [
+          16
+        ],
+        "state/v/layer1.bias": [
+          16
+        ],
+        "state/m/layer2.weight": [
+          16,
+          2
+        ],
+        "state/v/layer2.weight": [
+          16,
+          2
+        ],
+        "state/m/layer2.bias": [
+          2
+        ],
+        "state/v/layer2.bias": [
+          2
+        ],
+        "x": [
+          32,
+          2
+        ],
+        "labels": [
+          32
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": false,
+        "fold": false,
+        "cse": false,
+        "fusion": false,
+        "reuse": false,
+        "tiled": false,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    },
+    {
+      "name": "MLP complete Adam step",
+      "backend": "native NumPy",
+      "configuration": "optimized",
+      "medianMs": 0.8339999985764734,
+      "minMs": 0.8205829944927245,
+      "maxMs": 0.9247920024790801,
+      "stdMs": 0.031164989990542517,
+      "compilationMs": 7.433209000737406,
+      "executionMs": 0.8339999985764734,
+      "uploadMs": 0,
+      "readbackMs": 0,
+      "kernels": 86,
+      "scratchBytes": 10504,
+      "repetitions": 15,
+      "samplesMs": [
+        0.8232500040321611,
+        0.8205829944927245,
+        0.8207920036511496,
+        0.8208340004784986,
+        0.8309169934364036,
+        0.8226659992942587,
+        0.8389580034418032,
+        0.8415830016019754,
+        0.9247920024790801,
+        0.9143749994109385,
+        0.8520829942426644,
+        0.8400830047321506,
+        0.8352910008397885,
+        0.8339999985764734,
+        0.832874997286126
+      ],
+      "shapes": {
+        "layer0.weight": [
+          2,
+          16
+        ],
+        "layer0.bias": [
+          16
+        ],
+        "layer1.weight": [
+          16,
+          16
+        ],
+        "layer1.bias": [
+          16
+        ],
+        "layer2.weight": [
+          16,
+          2
+        ],
+        "layer2.bias": [
+          2
+        ],
+        "state/step": [],
+        "state/m/layer0.weight": [
+          2,
+          16
+        ],
+        "state/v/layer0.weight": [
+          2,
+          16
+        ],
+        "state/m/layer0.bias": [
+          16
+        ],
+        "state/v/layer0.bias": [
+          16
+        ],
+        "state/m/layer1.weight": [
+          16,
+          16
+        ],
+        "state/v/layer1.weight": [
+          16,
+          16
+        ],
+        "state/m/layer1.bias": [
+          16
+        ],
+        "state/v/layer1.bias": [
+          16
+        ],
+        "state/m/layer2.weight": [
+          16,
+          2
+        ],
+        "state/v/layer2.weight": [
+          16,
+          2
+        ],
+        "state/m/layer2.bias": [
+          2
+        ],
+        "state/v/layer2.bias": [
+          2
+        ],
+        "x": [
+          32,
+          2
+        ],
+        "labels": [
+          32
+        ]
+      },
+      "dtype": "float32",
+      "compiler": {
+        "dce": true,
+        "fold": true,
+        "cse": true,
+        "fusion": true,
+        "reuse": true,
+        "tiled": true,
+        "max_fusion": 8,
+        "max_bindings": 8,
+        "instrument": false,
+        "max_allocation_bytes": 134217728,
+        "max_kernel_work": 67108864
+      }
+    }
+  ],
+  "timingMethod": "perf_counter wall clock around synchronous NumPy completion and update commit; 3 warmups",
+  "environment": {
+    "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+    "python": "3.13.12",
+    "numpy": "2.2.6",
+    "backend": "native NumPy"
+  },
+  "timestamp": "2026-10-03T09:47:16.253532+00:00",
+  "notes": [
+    "Fusion, tiling and GPU scratch capacities describe generated GPU plans, not NumPy acceleration.",
+    "Native execution excludes browser startup and uses no GPU transfers.",
+    "Matmul BLAS behavior depends on installation; see launch environment."
+  ]
+}

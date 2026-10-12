@@ -1,0 +1,18 @@
+{
+  "pass": true,
+  "forgeVersion": "0.1.0",
+  "numpyVersion": "2.2.6",
+  "importedFromCleanEnvironment": true,
+  "sourceDirectoryOnPath": false,
+  "graphNodes": 53,
+  "generatedKernels": 13,
+  "oneStepLossBefore": 1.0719290971755981,
+  "oneStepLossAfter": 1.0637667179107666,
+  "adamStep": 1.0,
+  "cliHelp": true,
+  "cliMissingAssetError": true,
+  "wheel": "forge_ml-0.1.0-py3-none-any.whl",
+  "wheelSha256": "1ae0473edd832e4db288228f6b6002296428aada3e6ff1bd0878564c3fbf1cf4",
+  "timestamp": "2026-10-08T16:31:52.495909+00:00",
+  "temporaryEnvironmentRemoved": true
+}

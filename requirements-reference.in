@@ -1,0 +1,2 @@
+-r requirements-dev.in
+torch==2.8.0

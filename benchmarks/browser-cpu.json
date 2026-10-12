@@ -1,0 +1,425 @@
+{
+  "backend": "cpu",
+  "checks": [
+    {
+      "name": "All operators, gradients, optimizer state and updates against native NumPy",
+      "pass": true,
+      "details": {
+        "backend": "Pyodide NumPy",
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+          "sharedArrayBuffer": false,
+          "crossOriginIsolated": false
+        },
+        "fixtures": [
+          {
+            "name": "sgd-batch1-baseline",
+            "pass": true,
+            "scalars": 604,
+            "maxAbsolute": 7.450580596923828e-8,
+            "maxRelative": 0.000009045443506682579,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "sgd-batch1-optimized",
+            "pass": true,
+            "scalars": 604,
+            "maxAbsolute": 7.450580596923828e-8,
+            "maxRelative": 0.000009045443506682579,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "sgd-batch5-baseline",
+            "pass": true,
+            "scalars": 652,
+            "maxAbsolute": 1.1920928955078125e-7,
+            "maxRelative": 0.00002504712972134472,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "sgd-batch5-optimized",
+            "pass": true,
+            "scalars": 652,
+            "maxAbsolute": 1.1920928955078125e-7,
+            "maxRelative": 0.00002504712972134472,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "momentum-batch1-baseline",
+            "pass": true,
+            "scalars": 996,
+            "maxAbsolute": 5.960464477539063e-8,
+            "maxRelative": 0.000007909381165403814,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "momentum-batch1-optimized",
+            "pass": true,
+            "scalars": 996,
+            "maxAbsolute": 5.960464477539063e-8,
+            "maxRelative": 0.000007909381165403814,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "momentum-batch5-baseline",
+            "pass": true,
+            "scalars": 1044,
+            "maxAbsolute": 8.940696716308594e-8,
+            "maxRelative": 0.000036965191170183615,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "momentum-batch5-optimized",
+            "pass": true,
+            "scalars": 1044,
+            "maxAbsolute": 8.940696716308594e-8,
+            "maxRelative": 0.000036965191170183615,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "adam-batch1-baseline",
+            "pass": true,
+            "scalars": 1396,
+            "maxAbsolute": 5.960464477539063e-8,
+            "maxRelative": 0.0000015675676523009542,
+            "atol": 0.00002,
+            "rtol": 0.0002
+          },
+          {
+            "name": "adam-batch1-optimized",
+            "pass": true,
+            "scalars": 1396,
+            "maxAbsolute": 5.960464477539063e-8,
+            "maxRelative": 0.0000015675676523009542,
+            "atol": 0.00002,
+            "rtol": 0.0002
+          },
+          {
+            "name": "adam-batch5-baseline",
+            "pass": true,
+            "scalars": 1444,
+            "maxAbsolute": 1.1920928955078125e-7,
+            "maxRelative": 0.00007000380787102648,
+            "atol": 0.00002,
+            "rtol": 0.0002
+          },
+          {
+            "name": "adam-batch5-optimized",
+            "pass": true,
+            "scalars": 1444,
+            "maxAbsolute": 1.1920928955078125e-7,
+            "maxRelative": 0.00007000380787102648,
+            "atol": 0.00002,
+            "rtol": 0.0002
+          },
+          {
+            "name": "all-ops-baseline",
+            "pass": true,
+            "scalars": 139,
+            "maxAbsolute": 5.960464477539063e-8,
+            "maxRelative": 1.1741868638549118e-7,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "all-ops-optimized",
+            "pass": true,
+            "scalars": 139,
+            "maxAbsolute": 5.960464477539063e-8,
+            "maxRelative": 1.1741868638549118e-7,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "reduction-boundary-1",
+            "pass": true,
+            "scalars": 3,
+            "maxAbsolute": 0,
+            "maxRelative": 0,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "reduction-boundary-7",
+            "pass": true,
+            "scalars": 9,
+            "maxAbsolute": 0,
+            "maxRelative": 0,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "reduction-boundary-65",
+            "pass": true,
+            "scalars": 67,
+            "maxAbsolute": 5.960464477539063e-8,
+            "maxRelative": 1.289816639666505e-7,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "stable-large-tied-logits",
+            "pass": true,
+            "scalars": 31,
+            "maxAbsolute": 0,
+            "maxRelative": 0,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "ce-translation-0",
+            "pass": true,
+            "scalars": 16,
+            "maxAbsolute": 0,
+            "maxRelative": 0,
+            "atol": 5e-7,
+            "rtol": 0.000003
+          },
+          {
+            "name": "ce-translation-10000",
+            "pass": true,
+            "scalars": 16,
+            "maxAbsolute": 0,
+            "maxRelative": 0,
+            "atol": 5e-7,
+            "rtol": 0.000003
+          },
+          {
+            "name": "ce-translation--10000",
+            "pass": true,
+            "scalars": 16,
+            "maxAbsolute": 0,
+            "maxRelative": 0,
+            "atol": 5e-7,
+            "rtol": 0.000003
+          },
+          {
+            "name": "ce-translation-1e+06",
+            "pass": true,
+            "scalars": 16,
+            "maxAbsolute": 0,
+            "maxRelative": 0,
+            "atol": 5e-7,
+            "rtol": 0.000003
+          },
+          {
+            "name": "stable-extreme-sigmoid",
+            "pass": true,
+            "scalars": 14,
+            "maxAbsolute": 0,
+            "maxRelative": 0,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "integer-label-layouts",
+            "pass": true,
+            "scalars": 4,
+            "maxAbsolute": 0,
+            "maxRelative": 0,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "binding-swap",
+            "pass": true,
+            "scalars": 54,
+            "maxAbsolute": 0,
+            "maxRelative": 0,
+            "atol": 0,
+            "rtol": 0
+          }
+        ],
+        "pass": true,
+        "timestamp": "2026-10-08T11:11:50.411Z"
+      }
+    },
+    {
+      "name": "Initialize without training; real data and a decision boundary",
+      "pass": true,
+      "details": {
+        "step": 0,
+        "trainLoss": 0.786190390586853,
+        "validationLoss": 0.7590413093566895,
+        "trainAccuracy": 0.4166666666666667,
+        "validationAccuracy": 0.5,
+        "gradientNorm": null,
+        "elapsedMs": 0,
+        "stepMs": 0
+      }
+    },
+    {
+      "name": "Bounded training changes predictions and reduces loss",
+      "pass": true,
+      "details": {
+        "initial": {
+          "step": 0,
+          "trainLoss": 0.786190390586853,
+          "validationLoss": 0.7590413093566895,
+          "trainAccuracy": 0.4166666666666667,
+          "validationAccuracy": 0.5,
+          "gradientNorm": null,
+          "elapsedMs": 0,
+          "stepMs": 0
+        },
+        "trained": {
+          "step": 60,
+          "trainLoss": 0.172698974609375,
+          "validationLoss": 0.1424659788608551,
+          "trainAccuracy": 0.9404761904761905,
+          "validationAccuracy": 0.9444444444444444,
+          "gradientNorm": 0.19240446388721466,
+          "elapsedMs": 116.79999700000062,
+          "stepMs": 1.8000000000000238
+        }
+      }
+    },
+    {
+      "name": "Pause and single-step preserve bounded completion",
+      "pass": true,
+      "details": {
+        "step": 61,
+        "trainLoss": 0.17293903231620789,
+        "validationLoss": 0.14204996824264526,
+        "trainAccuracy": 0.9404761904761905,
+        "validationAccuracy": 0.9722222222222222,
+        "gradientNorm": 0.24917615950107574,
+        "elapsedMs": 119.29999700000079,
+        "stepMs": 2.5000000000001688
+      }
+    },
+    {
+      "name": "Export/import resumes Adam state and RNG identically on same backend",
+      "pass": true,
+      "details": {
+        "step": 62
+      }
+    },
+    {
+      "name": "Invalid and oversized experiment imports fail and preserve the session",
+      "pass": true,
+      "details": {
+        "rejected": 2
+      }
+    },
+    {
+      "name": "Tensor and gradient inspection, then repeated reset without growing owned buffers",
+      "pass": true,
+      "details": [
+        {
+          "training": null,
+          "evaluation": [],
+          "cacheSize": 0
+        },
+        {
+          "training": null,
+          "evaluation": [],
+          "cacheSize": 0
+        },
+        {
+          "training": null,
+          "evaluation": [],
+          "cacheSize": 0
+        }
+      ]
+    },
+    {
+      "name": "Late results cannot overwrite a newer run",
+      "pass": true,
+      "details": 0
+    },
+    {
+      "name": "Compiler option changes rebuild the plan and preserve initial predictions",
+      "pass": true,
+      "details": {
+        "optimized": 86,
+        "baseline": 189
+      }
+    },
+    {
+      "name": "Digits random initialization supports complete training",
+      "pass": true,
+      "details": {
+        "initial": {
+          "step": 0,
+          "trainLoss": 2.6023762226104736,
+          "validationLoss": 2.6178770065307617,
+          "trainAccuracy": 0.10862619808306709,
+          "validationAccuracy": 0.11654135338345864,
+          "gradientNorm": null,
+          "elapsedMs": 0,
+          "stepMs": 0
+        },
+        "after": {
+          "step": 30,
+          "trainLoss": 1.0955716371536255,
+          "validationLoss": 1.096435546875,
+          "trainAccuracy": 0.799520766773163,
+          "validationAccuracy": 0.8007518796992481,
+          "gradientNorm": 0.9458004236221313,
+          "elapsedMs": 74.199997,
+          "stepMs": 2.4999999999999467
+        }
+      }
+    },
+    {
+      "name": "Forge-trained digits checkpoint, confusion matrix and drawing probabilities",
+      "pass": true,
+      "details": {
+        "testAccuracy": 0.974910394265233,
+        "step": 310,
+        "prediction": {
+          "probabilities": [
+            0.0004941057995893061,
+            0.02188400737941265,
+            0.00005472121847560629,
+            0.022534241899847984,
+            0.00000301393242807535,
+            0.09448940306901932,
+            0.0001706671464489773,
+            0.000012315016647335142,
+            0.024620575830340385,
+            0.8357369899749756
+          ]
+        }
+      }
+    },
+    {
+      "name": "Worker replacement discards old requests and restores host checkpoint",
+      "pass": true,
+      "details": {
+        "generation": 1,
+        "step": 310
+      }
+    },
+    {
+      "name": "Watchdog replaces a nonresponsive worker and retains the host checkpoint",
+      "pass": true,
+      "details": {
+        "generation": 1,
+        "message": "Error: Worker watchdog timed out and replaced the worker. Submitted GPU work may have completed. Restore the last completed checkpoint or reset."
+      }
+    }
+  ],
+  "timestamp": "2026-10-08T11:11:49.096Z",
+  "url": "http://127.0.0.1:4173/Forge/validation.html",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+  "crossOriginIsolated": false,
+  "sharedArrayBuffer": false,
+  "capabilities": {
+    "webgpu": false,
+    "pyodide": "0.27.7",
+    "python": "3.12.7",
+    "numpy": "2.0.2",
+    "reason": "WebGPU explicitly disabled for CPU acceptance"
+  },
+  "pass": true
+}

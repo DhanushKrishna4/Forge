@@ -1,0 +1,46 @@
+{
+  "pass": true,
+  "timestamp": "2026-10-08T16:28:56.712977+00:00",
+  "base": "/Forge/",
+  "pythonArchiveMatchesAllCurrentSources": true,
+  "runtimeFilesMatchPinnedManifest": true,
+  "datasetAndCheckpointMatchPreparedAssets": true,
+  "buildLog": "benchmarks/static-build.log",
+  "buildBytes": 19339133,
+  "pythonArchiveSha256": "99724cb33d8c8597820d85adea229a7357d919e225402bb1f3909308800f0cbf",
+  "artifacts": {
+    "main-BstLtZ9z.js": "6cb8f399d104e8fb257a4eb0e4f6a2d7e98abe7f5a7707fdc8b70a9d051f5b65",
+    "types-JjVh62TI.js": "63a28349ecc65338d4313d5ce4ea351b88cdb7636c4419f0e3ee400b46206cc0",
+    "validation-ByrqHUQi.js": "5bae8446d6b59e8949fc43284180d7fb33f71407a7c11897766553a0fbadc71d",
+    "worker-Cfdc73cM.js": "18063451da6d622ac8e4bdec4274d9b36678de07d914b92a79d36a49e8698f51"
+  },
+  "nativeSuite": {
+    "passed": 302,
+    "seconds": 3.52,
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest -q"
+  },
+  "productionBrowserReports": [
+    "benchmarks/browser-cpu.json",
+    "benchmarks/browser-webgpu.json"
+  ],
+  "benchmarks": [
+    "benchmarks/native.json",
+    "benchmarks/pyodide.json",
+    "benchmarks/webgpu.json"
+  ],
+  "packageVerification": "benchmarks/package-validation.json",
+  "screenshots": [
+    "docs/screenshots/desktop-playground.png",
+    "docs/screenshots/mobile-digits.png"
+  ],
+  "reviewedViewports": [
+    {
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ]
+}

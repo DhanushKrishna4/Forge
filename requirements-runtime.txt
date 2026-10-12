@@ -1,0 +1,4 @@
+# Native Forge runtime only. Browser NumPy is bundled separately with Pyodide.
+# The larger development/reference lockfiles are intentionally separate.
+-e .
+numpy==2.2.6

@@ -1,0 +1,166 @@
+{"steps": 10, "ms_per_step": 2.410333299485501, "peakProcessRSSBytes": 40648704, "estimatedRemainingSeconds": 1.9041633065935457}
+step=60 validation_loss=0.36845 validation_accuracy=0.9248
+step=110 validation_loss=0.18852 validation_accuracy=0.9511
+step=160 validation_loss=0.15267 validation_accuracy=0.9624
+step=210 validation_loss=0.14802 validation_accuracy=0.9662
+step=260 validation_loss=0.14426 validation_accuracy=0.9549
+step=310 validation_loss=0.13084 validation_accuracy=0.9662
+step=360 validation_loss=0.13482 validation_accuracy=0.9662
+step=410 validation_loss=0.15655 validation_accuracy=0.9586
+step=460 validation_loss=0.14260 validation_accuracy=0.9624
+step=510 validation_loss=0.14698 validation_accuracy=0.9624
+step=560 validation_loss=0.13255 validation_accuracy=0.9624
+step=610 validation_loss=0.14203 validation_accuracy=0.9699
+step=660 validation_loss=0.13799 validation_accuracy=0.9662
+step=710 validation_loss=0.15153 validation_accuracy=0.9586
+step=760 validation_loss=0.14423 validation_accuracy=0.9624
+step=800 validation_loss=0.14723 validation_accuracy=0.9699
+{
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "python": "3.13.12",
+  "numpy": "2.2.6",
+  "seed": 42,
+  "pilot": {
+    "steps": 10,
+    "ms_per_step": 2.410333299485501,
+    "peakProcessRSSBytes": 40648704,
+    "estimatedRemainingSeconds": 1.9041633065935457
+  },
+  "split": {
+    "train": 1252,
+    "validation": 266,
+    "test": 279
+  },
+  "datasetChecksum": "fe61bc84cd6a594d5ed1b937b7d8f8f791d4091d2a9df91fe5d6066156a4db6e",
+  "selectedStep": 310,
+  "trainingSeconds": 1.9139345000003232,
+  "test": {
+    "loss": 0.09598913788795471,
+    "accuracy": 0.974910394265233,
+    "rows": 279,
+    "confusion": [
+      [
+        28,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        28,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        28,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        25,
+        0,
+        1,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        27,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        27,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        28,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        28,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        25,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        28
+      ]
+    ]
+  },
+  "peakProcessRSSBytes": 46727168,
+  "forgePersistentTensorBytes": 78844
+}

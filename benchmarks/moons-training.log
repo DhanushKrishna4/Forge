@@ -1,0 +1,50 @@
+{"steps": 10, "ms_per_step": 2.2295375005342066, "peakProcessRSSBytes": 37666816, "estimatedRemainingSeconds": 1.315427125315182}
+step=60 validation_loss=0.07877 validation_accuracy=0.9722
+step=110 validation_loss=0.02030 validation_accuracy=1.0000
+step=160 validation_loss=0.00602 validation_accuracy=1.0000
+step=210 validation_loss=0.00370 validation_accuracy=1.0000
+step=260 validation_loss=0.00377 validation_accuracy=1.0000
+step=310 validation_loss=0.00194 validation_accuracy=1.0000
+step=360 validation_loss=0.00189 validation_accuracy=1.0000
+step=410 validation_loss=0.00115 validation_accuracy=1.0000
+step=460 validation_loss=0.00096 validation_accuracy=1.0000
+step=510 validation_loss=0.00101 validation_accuracy=1.0000
+step=560 validation_loss=0.00078 validation_accuracy=1.0000
+step=600 validation_loss=0.00065 validation_accuracy=1.0000
+{
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "python": "3.13.12",
+  "numpy": "2.2.6",
+  "seed": 42,
+  "pilot": {
+    "steps": 10,
+    "ms_per_step": 2.2295375005342066,
+    "peakProcessRSSBytes": 37666816,
+    "estimatedRemainingSeconds": 1.315427125315182
+  },
+  "split": {
+    "train": 168,
+    "validation": 36,
+    "test": 36
+  },
+  "datasetChecksum": "eb2badc1464aa0d83376e99cc525f9104b1af2a5a80b0f95e813dbc7d3b7a88a",
+  "selectedStep": 600,
+  "trainingSeconds": 1.3405343330014148,
+  "test": {
+    "loss": 0.00026832229923456907,
+    "accuracy": 1.0,
+    "rows": 36,
+    "confusion": [
+      [
+        18,
+        0
+      ],
+      [
+        0,
+        18
+      ]
+    ]
+  },
+  "peakProcessRSSBytes": 38748160,
+  "forgePersistentTensorBytes": 14620
+}

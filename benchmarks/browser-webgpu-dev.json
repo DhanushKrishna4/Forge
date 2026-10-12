@@ -1,0 +1,557 @@
+{
+  "backend": "webgpu",
+  "checks": [
+    {
+      "name": "All operators, gradients, optimizer state and updates against native NumPy",
+      "pass": true,
+      "details": {
+        "backend": "WebGPU",
+        "environment": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+          "limits": {
+            "maxBufferSize": 268435456,
+            "maxStorageBufferBindingSize": 134217728,
+            "maxStorageBuffersPerShaderStage": 8,
+            "maxComputeWorkgroupsPerDimension": 65535,
+            "maxComputeInvocationsPerWorkgroup": 256,
+            "maxComputeWorkgroupSizeX": 256,
+            "maxComputeWorkgroupSizeY": 256,
+            "maxComputeWorkgroupStorageSize": 16384
+          },
+          "features": [
+            "core-features-and-limits"
+          ],
+          "adapter": {
+            "vendor": "apple",
+            "architecture": "metal-3",
+            "device": "",
+            "description": "",
+            "isFallbackAdapter": false
+          },
+          "timingMethod": "synchronized wall clock",
+          "timestampQueriesUsed": false,
+          "sharedArrayBuffer": false,
+          "crossOriginIsolated": false
+        },
+        "fixtures": [
+          {
+            "name": "sgd-batch1-baseline",
+            "pass": true,
+            "scalars": 604,
+            "maxAbsolute": 1.1920928955078125e-7,
+            "maxRelative": 0.000013603442427575353,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "sgd-batch1-optimized",
+            "pass": true,
+            "scalars": 604,
+            "maxAbsolute": 1.1920928955078125e-7,
+            "maxRelative": 0.000013603442427575353,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "sgd-batch5-baseline",
+            "pass": true,
+            "scalars": 652,
+            "maxAbsolute": 1.1920928955078125e-7,
+            "maxRelative": 0.00002179256960546732,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "sgd-batch5-optimized",
+            "pass": true,
+            "scalars": 652,
+            "maxAbsolute": 1.1920928955078125e-7,
+            "maxRelative": 0.00002179256960546732,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "momentum-batch1-baseline",
+            "pass": true,
+            "scalars": 996,
+            "maxAbsolute": 2.384185791015625e-7,
+            "maxRelative": 0.000007905099579738889,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "momentum-batch1-optimized",
+            "pass": true,
+            "scalars": 996,
+            "maxAbsolute": 1.7881393432617188e-7,
+            "maxRelative": 0.000007711646636268717,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "momentum-batch5-baseline",
+            "pass": true,
+            "scalars": 1044,
+            "maxAbsolute": 1.1920928955078125e-7,
+            "maxRelative": 0.000012468069230798274,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "momentum-batch5-optimized",
+            "pass": true,
+            "scalars": 1044,
+            "maxAbsolute": 1.1920928955078125e-7,
+            "maxRelative": 0.000012468069230798274,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "adam-batch1-baseline",
+            "pass": true,
+            "scalars": 1396,
+            "maxAbsolute": 0.0000028833746910095215,
+            "maxRelative": 0.0010300949831236977,
+            "atol": 0.00002,
+            "rtol": 0.0002
+          },
+          {
+            "name": "adam-batch1-optimized",
+            "pass": true,
+            "scalars": 1396,
+            "maxAbsolute": 0.000002853572368621826,
+            "maxRelative": 0.0010318924204356203,
+            "atol": 0.00002,
+            "rtol": 0.0002
+          },
+          {
+            "name": "adam-batch5-baseline",
+            "pass": true,
+            "scalars": 1444,
+            "maxAbsolute": 0.000001519918441772461,
+            "maxRelative": 0.0008443847496127417,
+            "atol": 0.00002,
+            "rtol": 0.0002
+          },
+          {
+            "name": "adam-batch5-optimized",
+            "pass": true,
+            "scalars": 1444,
+            "maxAbsolute": 0.000001519918441772461,
+            "maxRelative": 0.0008108113247620992,
+            "atol": 0.00002,
+            "rtol": 0.0002
+          },
+          {
+            "name": "all-ops-baseline",
+            "pass": true,
+            "scalars": 139,
+            "maxAbsolute": 2.384185791015625e-7,
+            "maxRelative": 3.544229772416146e-7,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "all-ops-optimized",
+            "pass": true,
+            "scalars": 139,
+            "maxAbsolute": 2.384185791015625e-7,
+            "maxRelative": 2.0962989422914056e-7,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "reduction-boundary-1",
+            "pass": true,
+            "scalars": 3,
+            "maxAbsolute": 1.1920928955078125e-7,
+            "maxRelative": 1.5652599935980867e-7,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "reduction-boundary-7",
+            "pass": true,
+            "scalars": 9,
+            "maxAbsolute": 2.384185791015625e-7,
+            "maxRelative": 1.5652599935980867e-7,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "reduction-boundary-65",
+            "pass": true,
+            "scalars": 67,
+            "maxAbsolute": 0.0000019073486328125,
+            "maxRelative": 1.7904670164642394e-7,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "stable-large-tied-logits",
+            "pass": true,
+            "scalars": 31,
+            "maxAbsolute": 2.9802322387695312e-8,
+            "maxRelative": 4.719208286740983e-7,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "ce-translation-0",
+            "pass": true,
+            "scalars": 16,
+            "maxAbsolute": 2.9802322387695312e-8,
+            "maxRelative": 4.4242576383259634e-7,
+            "atol": 5e-7,
+            "rtol": 0.000003
+          },
+          {
+            "name": "ce-translation-10000",
+            "pass": true,
+            "scalars": 16,
+            "maxAbsolute": 2.9802322387695312e-8,
+            "maxRelative": 4.4242576383259634e-7,
+            "atol": 5e-7,
+            "rtol": 0.000003
+          },
+          {
+            "name": "ce-translation--10000",
+            "pass": true,
+            "scalars": 16,
+            "maxAbsolute": 2.9802322387695312e-8,
+            "maxRelative": 4.4242576383259634e-7,
+            "atol": 5e-7,
+            "rtol": 0.000003
+          },
+          {
+            "name": "ce-translation-1e+06",
+            "pass": true,
+            "scalars": 16,
+            "maxAbsolute": 2.9802322387695312e-8,
+            "maxRelative": 4.4242576383259634e-7,
+            "atol": 5e-7,
+            "rtol": 0.000003
+          },
+          {
+            "name": "stable-extreme-sigmoid",
+            "pass": true,
+            "scalars": 14,
+            "maxAbsolute": 3.783505853677006e-44,
+            "maxRelative": 3.783505853677006e-32,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "integer-label-layouts",
+            "pass": true,
+            "scalars": 4,
+            "maxAbsolute": 5.960464477539063e-8,
+            "maxRelative": 6.082551537915372e-8,
+            "atol": 0.000003,
+            "rtol": 0.00003
+          },
+          {
+            "name": "binding-swap",
+            "pass": true,
+            "scalars": 54,
+            "maxAbsolute": 0,
+            "maxRelative": 0,
+            "atol": 0,
+            "rtol": 0
+          }
+        ],
+        "pass": true,
+        "timestamp": "2026-10-04T15:09:55.921Z"
+      }
+    },
+    {
+      "name": "Initialize without training; real data and a decision boundary",
+      "pass": true,
+      "details": {
+        "step": 0,
+        "trainLoss": 0.7861903309822083,
+        "validationLoss": 0.7590411305427551,
+        "trainAccuracy": 0.4166666666666667,
+        "validationAccuracy": 0.5,
+        "gradientNorm": null,
+        "elapsedMs": 0,
+        "stepMs": 0
+      }
+    },
+    {
+      "name": "Bounded training changes predictions and reduces loss",
+      "pass": true,
+      "details": {
+        "initial": {
+          "step": 0,
+          "trainLoss": 0.7861903309822083,
+          "validationLoss": 0.7590411305427551,
+          "trainAccuracy": 0.4166666666666667,
+          "validationAccuracy": 0.5,
+          "gradientNorm": null,
+          "elapsedMs": 0,
+          "stepMs": 0
+        },
+        "trained": {
+          "step": 60,
+          "trainLoss": 0.17269887030124664,
+          "validationLoss": 0.14246588945388794,
+          "trainAccuracy": 0.9404761904761905,
+          "validationAccuracy": 0.9444444444444444,
+          "gradientNorm": 0.19240421056747437,
+          "elapsedMs": 137.00000002980232,
+          "stepMs": 1.5
+        }
+      }
+    },
+    {
+      "name": "Pause and single-step preserve bounded completion",
+      "pass": true,
+      "details": {
+        "step": 61,
+        "trainLoss": 0.17293895781040192,
+        "validationLoss": 0.1420498937368393,
+        "trainAccuracy": 0.9404761904761905,
+        "validationAccuracy": 0.9722222222222222,
+        "gradientNorm": 0.2491759955883026,
+        "elapsedMs": 139.3000000268221,
+        "stepMs": 2.2999999970197678
+      }
+    },
+    {
+      "name": "Export/import resumes Adam state and RNG identically on same backend",
+      "pass": true,
+      "details": {
+        "step": 62
+      }
+    },
+    {
+      "name": "Invalid and oversized experiment imports fail and preserve the session",
+      "pass": true,
+      "details": {
+        "rejected": 2
+      }
+    },
+    {
+      "name": "Tensor and gradient inspection, then repeated reset without growing owned buffers",
+      "pass": true,
+      "details": [
+        {
+          "training": {
+            "ownedBytes": 21164,
+            "bufferCount": 80,
+            "pipelineCount": 86,
+            "stagingBytes": 0,
+            "deviceOwnedBytes": 318940,
+            "deviceStagingBytes": 0
+          },
+          "evaluation": [
+            {
+              "ownedBytes": 266376,
+              "bufferCount": 10,
+              "pipelineCount": 7,
+              "stagingBytes": 0,
+              "deviceOwnedBytes": 318940,
+              "deviceStagingBytes": 0
+            },
+            {
+              "ownedBytes": 24940,
+              "bufferCount": 11,
+              "pipelineCount": 7,
+              "stagingBytes": 0,
+              "deviceOwnedBytes": 318940,
+              "deviceStagingBytes": 0
+            },
+            {
+              "ownedBytes": 6460,
+              "bufferCount": 11,
+              "pipelineCount": 7,
+              "stagingBytes": 0,
+              "deviceOwnedBytes": 318940,
+              "deviceStagingBytes": 0
+            }
+          ],
+          "cacheSize": 3
+        },
+        {
+          "training": {
+            "ownedBytes": 21164,
+            "bufferCount": 80,
+            "pipelineCount": 86,
+            "stagingBytes": 0,
+            "deviceOwnedBytes": 318940,
+            "deviceStagingBytes": 0
+          },
+          "evaluation": [
+            {
+              "ownedBytes": 266376,
+              "bufferCount": 10,
+              "pipelineCount": 7,
+              "stagingBytes": 0,
+              "deviceOwnedBytes": 318940,
+              "deviceStagingBytes": 0
+            },
+            {
+              "ownedBytes": 24940,
+              "bufferCount": 11,
+              "pipelineCount": 7,
+              "stagingBytes": 0,
+              "deviceOwnedBytes": 318940,
+              "deviceStagingBytes": 0
+            },
+            {
+              "ownedBytes": 6460,
+              "bufferCount": 11,
+              "pipelineCount": 7,
+              "stagingBytes": 0,
+              "deviceOwnedBytes": 318940,
+              "deviceStagingBytes": 0
+            }
+          ],
+          "cacheSize": 3
+        },
+        {
+          "training": {
+            "ownedBytes": 21164,
+            "bufferCount": 80,
+            "pipelineCount": 86,
+            "stagingBytes": 0,
+            "deviceOwnedBytes": 318940,
+            "deviceStagingBytes": 0
+          },
+          "evaluation": [
+            {
+              "ownedBytes": 266376,
+              "bufferCount": 10,
+              "pipelineCount": 7,
+              "stagingBytes": 0,
+              "deviceOwnedBytes": 318940,
+              "deviceStagingBytes": 0
+            },
+            {
+              "ownedBytes": 24940,
+              "bufferCount": 11,
+              "pipelineCount": 7,
+              "stagingBytes": 0,
+              "deviceOwnedBytes": 318940,
+              "deviceStagingBytes": 0
+            },
+            {
+              "ownedBytes": 6460,
+              "bufferCount": 11,
+              "pipelineCount": 7,
+              "stagingBytes": 0,
+              "deviceOwnedBytes": 318940,
+              "deviceStagingBytes": 0
+            }
+          ],
+          "cacheSize": 3
+        }
+      ]
+    },
+    {
+      "name": "Late results cannot overwrite a newer run",
+      "pass": true,
+      "details": 0
+    },
+    {
+      "name": "Compiler option changes rebuild the plan and preserve initial predictions",
+      "pass": true,
+      "details": {
+        "optimized": 86,
+        "baseline": 189
+      }
+    },
+    {
+      "name": "Digits random initialization supports complete training",
+      "pass": true,
+      "details": {
+        "initial": {
+          "step": 0,
+          "trainLoss": 2.6023762226104736,
+          "validationLoss": 2.617877244949341,
+          "trainAccuracy": 0.10862619808306709,
+          "validationAccuracy": 0.11654135338345864,
+          "gradientNorm": null,
+          "elapsedMs": 0,
+          "stepMs": 0
+        },
+        "after": {
+          "step": 30,
+          "trainLoss": 1.095569133758545,
+          "validationLoss": 1.0964341163635254,
+          "trainAccuracy": 0.799520766773163,
+          "validationAccuracy": 0.8007518796992481,
+          "gradientNorm": 0.9458000659942627,
+          "elapsedMs": 90.09999996423721,
+          "stepMs": 2.2999999970197678
+        }
+      }
+    },
+    {
+      "name": "Forge-trained digits checkpoint, confusion matrix and drawing probabilities",
+      "pass": true,
+      "details": {
+        "testAccuracy": 0.974910394265233,
+        "step": 310,
+        "prediction": {
+          "probabilities": [
+            0.000494105217512697,
+            0.021883990615606308,
+            0.00005472124394145794,
+            0.022534238174557686,
+            0.00000301392742585449,
+            0.09448929131031036,
+            0.00017066701548174024,
+            0.00001231500573339872,
+            0.024620557203888893,
+            0.8357371687889099
+          ]
+        }
+      }
+    },
+    {
+      "name": "Injected device loss reports failure, then CPU recovery restores completed checkpoint",
+      "pass": true,
+      "details": {
+        "step": 310,
+        "trainLoss": 0.02887340635061264,
+        "validationLoss": 0.13084231317043304,
+        "trainAccuracy": 0.9952076677316294,
+        "validationAccuracy": 0.9661654135338346,
+        "gradientNorm": null,
+        "elapsedMs": 699.1395900040516,
+        "stepMs": 0
+      }
+    },
+    {
+      "name": "Worker replacement discards old requests and restores host checkpoint",
+      "pass": true,
+      "details": {
+        "generation": 1,
+        "step": 310
+      }
+    },
+    {
+      "name": "Watchdog replaces a nonresponsive worker and retains the host checkpoint",
+      "pass": true,
+      "details": {
+        "generation": 1,
+        "message": "Error: Worker watchdog timed out and replaced the worker. Submitted GPU work may have completed. Restore the last completed checkpoint or reset."
+      }
+    }
+  ],
+  "timestamp": "2026-10-04T15:09:53.581Z",
+  "url": "http://127.0.0.1:5173/Forge/validation.html",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+  "crossOriginIsolated": false,
+  "sharedArrayBuffer": false,
+  "capabilities": {
+    "webgpu": true,
+    "pyodide": "0.27.7",
+    "python": "3.12.7",
+    "numpy": "2.0.2",
+    "adapter": "apple metal-3"
+  },
+  "pass": true
+}
